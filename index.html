@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html style="--offset-init:11px; --offset-content:11px; --offset-header:11px;" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NORA 2026</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+<!--*************  IMPORTED SCRIPTS ************* -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--Navigation Bar Definition-->
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom navbar-solid">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="site-branding">
+        <a class="logo" href="#">
+          NORA 2026
+        </a>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-items">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a data-scroll="" href="#about">About</a></li>
+        <li><a data-scroll="" href="#paper_submissions">Call for papers</a></li>
+        <li><a data-scroll="" href="#important_dates">Important dates</a></li>
+        <li><a data-scroll="" href="#program">Program</a></li>
+        <!--<li><a href="">Proceedings</a></li>-->
+        <li><a data-scroll="" href="#committee">Committee</a></li>
+        <li><a data-scroll="" href="#venue">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section about" style="padding:0">
+  <div class="container">
+    <!-- *************** Main Entry Stuff ***************-->
+    <div class="row">
+      <div class="col-lg-12 uOffset">
+        <br>
+        <h1 style="padding-top:25px">NORA'26 - Workshop on Knowledge Graphs &amp; Agentic Systems Interplay</h1>
+        <p>1<sup>st</sup> NORA Workshop at ICLR'26, April 23-27<sup>th</sup>, 2026</p>
+        <div class="row">
+          <div class="col-lg-12"><img class="img-responsive" src="img/visual_banner.png" alt="visual banner" style="width: 100%;"></div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      <!-- 	<\!-- *************** Proceedings Announcement ***************-\-> -->
+      <!-- 	<div style="color:black; border: 5px solid #f86d18; opacity: .8; padding: 10px; margin: 20px;"> -->
+      <!-- 	  <div> -->
+      <!-- 	    <h3>Proceedings are available through CEUR-WS<br></h3> -->
+      <!-- 	  </div> -->
+      <!-- 	  <div class="bs-component"> -->
+      <!-- 	    <h4><a href="http://ceur-ws.org/Vol-XYZT/" target="_blank">http://ceur-ws.org/Vol-XYZT/</a></h4> -->
+      <!-- 	  </div> -->
+      <!-- 	</div> -->
+
+      
+      <!-- *************** About Entry Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="about" class="uContent">About</h2>
+        </div>
+        <div class="bs-component">
+	  <p>
+	    Agents have experienced significant growth in recent
+	    years, largely due to the rapid technological advancements
+	    of Large Language Models (LLMs). Although these agents
+	    benefit from LLMs’ advanced generation proficiency, they
+	    still suffer from catastrophic forgetting and a limited
+	    context window size compared to the agents’ needs in terms
+	    of contextual information. Knowledge Graphs (KGs) are a
+	    powerful paradigm for structuring and managing connected
+	    pieces of information while unlocking deeper insights than
+	    traditional methods. Their value is immense for tasks that
+	    require context, integration, inter-linking, and
+	    reasoning. However, this power comes at the cost of
+	    significant upfront and ongoing investment in
+	    construction, curation, and specialised expertise. The
+	    NORA workshop aims at analysing and discussing emerging
+	    and novel practices, ongoing research efforts and
+	    validated or deployed innovative solutions that showcase
+	    the growing synergy between LLMs agents and KGs.
+	  </p>
+        </div>
+
+	
+        <!-- *************** Paper Submission Guidelines Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="paper_submissions" class="uContent">Call for papers</h2>
+        </div>
+        <div class="bs-component">
+	  <p>
+	    The recent proliferation of large language models (LLMs)
+	    has opened the doors for new paradigms that benefit many
+	    applications like intelligent assistants, content creation
+	    & summarisation, code generation & debugging, and
+	    knowledge discovery, to name a few. Such applications are
+	    achieved through prompt engineering & in-context learning,
+	    retrieval augmented generation, fine-tuning & alignment,
+	    and function calling & tool usage. These families of
+	    techniques can be used on their own or combined for better
+	    results.
+	  </p>
+	  <p>
+	    Thanks to the constantly improving reasoning and function
+	    calling capabilities of LLMs, LLM-based agents have
+	    attracted more attention. While performing their allocated
+	    tasks, these agents usually need to accumulate memory and
+	    feedbacks from tool calls and maintain a long run of these
+	    tasks. Consequently, they can easily exceed the context
+	    window size, explode costs, and degrade both latency and
+	    performance, due to their growing usage of tokens.
+	  </p>
+	  <p>
+	    Depending on their tasks, agents usually need access to
+	    minimal portions of semantic memory (i.e. facts), episodic
+	    memory (i.e. events), and procedural memory
+	    (i.e. instructions). However, it remains challenging for
+	    agents to select relevant examples from different
+	    memories, especially in large-scale applications (e.g.,
+	    personal memories for personal assistance).
+	  </p>
+	  <p>
+	    Knowledge Graphs (KGs) model data and knowledge in a
+	    structured and explicit format known as graphs. Thanks to
+	    this native structure, they have demonstrated great
+	    capabilities in capturing rich semantics and connections
+	    between entities and concepts in both closed and open
+	    domains. This feature has enabled both 1) complex logical
+	    reasoning, which is needed for multi-hop queries and
+	    deriving new implicit knowledge from explicit facts; and
+	    2) graph-based learning through richer features of the
+	    structured data. However, curating knowledge can be
+	    challenging, especially from heterogeneous data sources
+	    and formats (e.g., personal assistants). As a consequence,
+	    large-scale and industrial applications' scenarios are
+	    even more impacted by this bottleneck, which thereby lower
+	    the adoption of pure KG-based solutions in some Industrial
+	    use-cases.
+	  </p>
+	  <p>
+	    Therefore, this <b>first</b> edition of the workshop aims
+	    to unveil the emerging yet growing interplay between two
+	    key paradigms of recent AI systems: Agents and Knowledge
+	    Graphs. On the one hand, the efficiency and performance of
+	    agentic systems can benefit greatly from KGs as a
+	    structured data model and reasoning foundation, especially
+	    in designing and implementing their various memories. On
+	    the other hand, KGs can leverage the advanced linguistic
+	    capabilities of LLM agents in extracting, computing and
+	    engineering knowledge from unstructured, multi-modal &
+	    multi-lingual data sources.
+	  </p>
+	  <hr>
+	  <p>
+	    Topics of interest include, but are not limited to:
+	  </p>
+	  <ul>
+	    <li>gentic and Knowledgeable Systems with Small Language Models</li>
+	    <li>Agentic Information Extraction and Retrieval</li>
+	    <li>Agentic KG Construction & Enrichment</li>
+	    <li>Agents for Complex Reasoning over KGs</li>
+	    <li>Agents and KGs for private and proactive personal assistants & Personalisation</li>
+	    <li>Augmenting Agents with External Knowledge</li>
+	    <li>Collaborative Agents for Knowledge Computing and Serving</li>
+	    <li>Context Engineering enhanced by KGs</li>
+	    <li>Efficient Reinforcement Learning for better performance</li>
+	    <li>Graph Retrieval Augmented Generation in Agentic systems</li>
+	    <li>KGs serving agents’ memories: episodic (experiences, events, etc.), semantic (facts, concepts, etc.), and procedural (skills, tasks, etc.)</li>
+	    <li>Multi-Lingual & Multi-modal integrations</li>
+	    <li>On-Device or Hybrid (Device-Cloud) systems combining Agents and KGs</li>
+	    <li>Personalisation via Agents and KGs</li>
+	    <li>Personas and digital twins enabled by Agents and KGs</li>
+	    <li>Theoretical and experimental analysis of close and open Domain applications scenarios</li>
+	  </ul>
+	  <hr>
+	  <p>
+	    We envision <b>four</b> types of submissions covering the
+	    entire workshop topics spectrum (page limits does not
+	    include references and appendices):
+	  </p>
+	  <ol>
+	    <li><u>Research Papers</u> (max 8 pages), presenting
+	    novel scientific research addressing topics of the
+	    workshop.</li>
+	    <li><u>Position &amp; Demo papers</u> (max 6 pages),
+	    encouraging papers describing significant work in
+	    progress, late breaking results or ideas of the domain, as
+	    well as functional systems relevant to the community.</li>
+	    <li><u>Industry &amp; Use Case Presentations</u> (max 6
+	    pages), in which industry experts can present and discuss
+	    practical solutions, use case prototypes, best practices,
+	    etc. at any stage of implementation.</li>
+	    <li><u>Tiny/Short Papers</u> (max 2 pages), presenting
+	    research topics, works in progress, and practical
+	    applications</li>
+	  </ol>
+	  <p>
+	    In order to ease the reviewing process, authors may add
+	    the track they are submitting to directly in their titles,
+	    for instance: "<code>Article Title [Industry]</code>".
+	  </p>
+	  <hr>
+	  <p>
+	    <!-- Submissions must be in double-column format, and must adhere -->
+	    <!-- to the <a href="https://www.acm.org/publications/proceedings-template">ACM -->
+	    <!-- template and format</a> (also <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty">available</a> -->
+	    <!-- in Overleaf). The recommended setting for LaTeX -->
+	    <!-- is: <code>\documentclass[sigconf, anonymous, review]{acmart}</code>. -->
+	    <!-- The PDF files must have all non-standard fonts -->
+	    <!-- embedded. -->
+	    Workshop submissions must be
+	    <b>self-contained</b> and in <b>English</b>. Note: The
+	    review process is <b>double-blind</b>, authors should be
+	    careful and submit anonymous articles.
+	  </p>
+	  <p>
+	    All papers should be submitted to <a href="">https://openreview.net/TO-BE-DEFINED</a>.
+	  </p>
+        </div>
+
+        <!-- *************** Important Dates Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="important_dates" class="uContent">Important Dates</h2>
+        </div>
+	<div class="bs-component">
+          <ul>
+	    <li>Abstract: January 15<sup>th</sup>, 2026</li>
+	    <li>Submission: January 22<sup>nd</sup>, 2026</li>
+            <li>Notification: February 28<sup>th</sup>, 2026</li>
+            <li>Camera-ready: February 19<sup>th</sup>, 2026</li>
+            <li>Presentation: April XX<sup>th</sup>, 2026</li>
+          </ul>
+	  Note: All deadlines are 23:59 AOE.
+        </div>
+	
+	<!-- *************** Workshop Program ***************-->
+        <div class="uHeader page-header">
+          <h2 id="program" class="uContent">Program</h2>
+        </div>
+	<div class="bs-component">
+	  <p>To be announced</p>
+	</div>
+
+
+	
+        <!-- *************** Committee & Organisation Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="committee" class="uContent">Committee</h2>
+        </div>
+        <div class="bs-component">
+          <h3>Organisers</h3>
+	  <ul>
+	    <li>Btissam Er-Rahmadi (Huawei Technologies R&amp;D UK
+            Ltd.) is a Senior Scientist at the Knowledge Graph
+            Lab. She has been developing innovative and novel
+            solutions designed for Knowledge Computing and Serving in
+            many application scenarios belonging to different domains
+            (e.g., personal assistants, e-commerce, geospatial search,
+            etc.). She also has experience in applying operations
+            research methods, mainly mathematical optimisation and
+            simulations, to enhance the performance of distributed
+            systems. She is interested in leveraging Deep Learning and
+            NLP with knowledge engineering to construct advanced,
+            seamless and practical approaches. Previously, she has
+            organized the first N2Women Meet- ing at WiMob 2015 in
+            UAE.</li>
+	    <li><a href="https://dgraux.github.io/">Damien Graux</a>
+	    (EcoVadis) leads a team of research scientists at EvoVadis
+	    that is specialised in AI/ML. He has been contributing to
+	    research efforts in Knowledge Computing technologies:
+	    focusing inter alia on Semantic Web, designing complex
+	    pipelines for heterogeneous Big Data and LLM-based
+	    knowledge management. Prior to this, he had research
+	    positions at Huawei R&D (UK), at Inria (France), Trinity
+	    College Dublin (Ireland) and Fraunhofer IAIS (Germany). He
+	    has been involved in the organisations of many
+	    international workshops at major conferences such as the
+	    LASCAR (co-located with ESWC) or the MEPDaW (co-located
+	    with ISWC) series, and more recently PromptEng (co-located
+	    with the ACM WebConf).</li>
+	    <li><a href="https://montellasebastien.github.io/">Sebastien
+	    Montella</a> (Huawei Technologies R&amp;D UK Ltd.) is a
+	    Senior Research Scientist at the Knowledge Graph
+	    Lab. During his Ph.D., he specialized in Natural Language
+	    Generation and Knowledge Graph Embeddings research
+	    areas. Additionally, he has a keen interest in statistical
+	    learning, geometric deep learning, natural language
+	    processing, and computer vision. In the past, Sebastien
+	    has co-organized the 18th Workshop on Spoken Dialogue
+	    Systems for PhDs, PostDocs & New Researchers (YRRSDS) in
+	    Edinburgh, Scotland (2022), but also the PromptEng
+	    workshop series at TheWebConf (ex-WWW). Currently, he is
+	    one of the Program Chairs of the EMNLP 2025 Industry
+	    Track.</li>
+	    <li><a href="https://hajirajabeen.github.io/">Hajira
+	    Jabeen</a> [UniKlinik] leads the ‘AI in Research Data
+	    Management’ team within the Institute for Biomedical
+	    Informatics. Her team focuses on leveraging artificial
+	    intelligence and LLMs to improve research data management
+	    practices, particularly in the biomedical field. The team
+	    works on developing scalable AI-driven tools and workflows
+	    that enhance data organization, integration, and analysis,
+	    developing innovative data-driven solutions.  She has a
+	    background in both research and teaching, with previous
+	    affiliations at the University of Bonn, the University of
+	    Cologne, and ITU Copenhagen, and has organized multiple
+	    workshops and conferences in data science and
+	    informatics.</li>
+	    <li>Andre Melo (Huawei Technologies R&amp;D UK Ltd.) is a
+	    Research Scientist leading the Knowledge-Aware Agents team
+	    at Huawei's Knowledge Graph Lab in Edinburgh. During his
+	    PhD he researched automatic error detection and completion
+	    methods for Knowledge Graphs. He also has worked with
+	    Knowledge Graph applications in the medical and
+	    Geographical Information Systems and E-commerce domains in
+	    the industry. His research interests include graph-based
+	    retrieval-augment generation methods for question
+	    answering, memory extraction and retrieval for multi-agent
+	    systems.</li>
+	    <li>Khalil Mrini (Oracle, New York City, U.S.) is an NLP
+	    researcher working as Principal Applied Scientist at OCI’s
+	    Agent Science team. He won the Dissertation Award of the
+	    Computer Science and Engineering department at the
+	    University of California San Diego for his 2022
+	    Ph.D. thesis on Medical Question Answering. He has
+	    previously worked as Research Scientist at Meta, Bytedance
+	    (TikTok), and Grammarly, and was a research intern at
+	    Google Brain (now Deepmind), Facebook AI, Amazon Alexa,
+	    and Adobe Research. Dr. Mrini has published at ACL, EMNLP,
+	    NAACL, and at the AfricaNLP workshop at ICLR. He
+	    participates in the organization of the Arabic NLP
+	    Conference co-located with EMNLP, and is part of the
+	    organizing committee of EACL 2026 due to be held in Rabat,
+	    Morocco.  He has co-founded and led affinity workshops for
+	    North Africans in NLP at various NLP conferences.</li>
+	  </ul>
+        </div>
+	
+        <div class="bs-component">
+          <h3>Program Committee</h3>
+	  <p>To be announced</p>
+        </div>
+	
+      </div>
+      <div class="col-lg-4" style="padding-top:20px">
+        <div class="bs-component">
+          <h3>Important Dates</h3>
+	  All deadlines are 23:59 AOE.
+          <ul>
+	    <li><u>Abstract</u> (<a href="">OpenReview</a>): January 15<sup>th</sup>, 2026</li>
+	    <li><u>Submission</u>: January 22<sup>nd</sup>, 2026</li>
+            <li><u>Notification</u>: February 28<sup>th</sup>, 2026</li>
+            <li><u>Camera-ready</u>: February 19<sup>th</sup>, 2026</li>
+            <li><u>Presentation</u>: April XX<sup>th</sup>, 2026</li>
+          </ul>
+        </div>
+        <!-- Add Twitter -->
+        <!-- <div class="bs-component" style="padding-top:20px"> -->
+	<!--   <a class="twitter-timeline" href="https://twitter.com/PromptEng1" data-widget-id="568782153191006208">@PromptEng1</a> -->
+	<!--   <script> -->
+	<!--     ! function(d, s, id) { -->
+	<!--      var js, fjs = d.getElementsByTagName(s)[0], -->
+	<!--      p = /^http:/.test(d.location) ? 'http' : 'https'; -->
+	<!--      if (!d.getElementById(id)) { -->
+	<!--       js = d.createElement(s); -->
+	<!--       js.id = id; -->
+	<!--       js.src = p + "://platform.twitter.com/widgets.js"; -->
+	<!--       fjs.parentNode.insertBefore(js, fjs); -->
+	<!--      } -->
+	<!--     }(document, "script", "twitter-wjs"); -->
+	<!--   </script> -->
+	<!-- </div> -->
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="venue" class="section location">
+  <div class="container">
+    <div class="col-sm-6 uHeader">
+      <h2 class="section-title uContent">Event Location</h2>
+      <p>
+	PromptEng 2026 is co-located with
+	<a href="https://iclr.cc/">ICLR
+	2026</a>.
+      </p>
+      <blockquote>
+	<p>
+	  Rio de Janeiro, Brazil
+	</p>
+      </blockquote>
+      <p>
+	<a href="https://iclr.cc/">More
+	  info.</a> about the venue.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--The Magic Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="site-info">
+	  Designed and <br> Developed by <a data-scroll=""
+					    href="#">NORA 2026</a>
+	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>window.onload = window.onresize;</script>
+
+</body>
+</html>
