@@ -10,6 +10,25 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* cards */
+    .card{background:none;border:none;}
+    .card-body{padding:0.5rem;text-align:center;}
+    .speaker-img,.organizer-img{width:100%;max-width:200px;height:200px;object-fit:cover;border-radius:50%;margin:0 auto;}
+    .speaker-name,.organizer-name{display:block;margin-top:0.4rem;font-weight:600;white-space:nowrap;}
+    .flex-row-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;}
+    .flex-row-wrap .card{flex:1 1 200px;max-width:220px;}
+	  
+	.clickable-image img {
+	  display: block;
+	  border: none;
+	  transition: filter 0.25s ease; /* animate brightness change */
+	}
+	
+	.clickable-image:hover img {
+	  filter: brightness(1.2);       /* 20% brighter on hover */
+	}
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -41,6 +60,7 @@
         <li class="active"><a data-scroll="" href="#about">About</a></li>
         <li><a data-scroll="" href="#paper_submissions">Call for papers</a></li>
         <li><a data-scroll="" href="#important_dates">Important dates</a></li>
+		  <li><a data-scroll="" href="#speakers">Speakers</a></li>
         <li><a data-scroll="" href="#program">Program</a></li>
         <!--<li><a href="">Proceedings</a></li>-->
         <li><a data-scroll="" href="#committee">Committee</a></li>
@@ -331,6 +351,23 @@
           </ul>
 	  Note: All deadlines are AoE.
         </div>
+
+        <!-- *************** Speakers Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="speakers" class="uContent">Confirmed Speakers</h2>
+        </div>
+      <div class="flex-row-wrap">
+        <div class="card speaker-card">
+          <a href="https://sferrada.com/" class="clickable-image">
+            <img src="./img/sferrada.jpg" alt="Sebastian Ferrada" class="speaker-img">
+		  </a>
+          <div class="card-body">
+            <span class="speaker-name">Sebasti&aacute;n Ferrada</span>
+            <small>Universidad de Chile</small>
+          </div>
+        </div>
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+	  </div>
 	
 	<!-- *************** Workshop Program ***************-->
         <div class="uHeader page-header">
